@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
 import { fadeIn } from "../animations";
 
 const Home = () => {
-  //Get the current location
+  //get the current location
   const location = useLocation();
   const pathId = location.pathname.split("/")[2];
   //FETCH GAMES
@@ -95,15 +95,10 @@ const GameList = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
-  @media (max-width: 1300px) {
-    display: block;
-    padding: 2rem 0rem;
-    text-align: center;
-  }
 `;
 
 const Games = styled(motion.div)`
-  min-height: 79vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 3rem;
