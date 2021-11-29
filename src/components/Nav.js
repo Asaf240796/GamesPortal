@@ -48,6 +48,7 @@ const StyledNav = styled(motion.nav)`
     border: none;
     margin-top: 1rem;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
   }
   button {
     font-size: 1.5rem;
@@ -56,6 +57,10 @@ const StyledNav = styled(motion.nav)`
     cursor: pointer;
     background: #ff7676;
     color: white;
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
   }
 `;
 
